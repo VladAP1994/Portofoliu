@@ -1,0 +1,84 @@
+@mixin animationOne {
+  animation: introFadeIn ease-in-out 1.3s;
+  -webkit-animation: introFadeIn ease-in-out 1.3s;
+}
+@mixin animationTwo {
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+}
+@mixin body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(../media/Cover.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@mixin navBar {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.664);
+  top: 0px;
+  z-index: 1;
+}
+@mixin gitIcon {
+  float: right;
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  top: -3px;
+}
+@mixin navButtons {
+  float: left;
+  padding: 10px 0 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 90px;
+  font-weight: 450;
+  background-color: transparent;
+}
+@mixin navButtonsFocus {
+  color: rgb(31, 218, 224);
+}
+@mixin navButtonVisited{
+    color:rgb(31, 218, 224);
+}
+@mixin paragraphStyle{
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+  position: static;
+}
+@mixin container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin containerContent{
+  width: 1800px;
+  height: 500px;
+}
+
+// @mixin mainResp{
+//   @media only screen and (min-width:414px) and (max-width:620px) {
+//     .Title{
+        
+//     }
+//   }
+// }

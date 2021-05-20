@@ -1,0 +1,164 @@
+@-webkit-keyframes introFadeIn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes introFadeIn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes introFadeInBtn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes introFadeInBtn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(../media/Cover.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBar {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.664);
+  top: 0px;
+  z-index: 1;
+}
+
+#gitIcon {
+  float: right;
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  top: -3px;
+}
+
+a {
+  float: left;
+  padding: 10px 0 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 90px;
+  font-weight: 450;
+  background-color: transparent;
+}
+
+a:focus {
+  color: #1fdae0;
+}
+
+#aboutBtn:visited {
+  color: #1fdae0;
+}
+
+.aboutTitle {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  top: 60px;
+  left: 90px;
+}
+
+.aboutHeader {
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.5mm;
+  margin-bottom: 40px;
+}
+
+.paragraphContent {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+  position: static;
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+}
+
+.stupidParagraph {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+  position: static;
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+  position: relative;
+  left: -163px;
+}
+
+#link {
+  position: relative;
+  left: 275px;
+  bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #1fdae0;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,223 @@
+@-webkit-keyframes introFadeIn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes introFadeIn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes introFadeInBtn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes introFadeInBtn {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(../media/Cover.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBar {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.664);
+  top: 0px;
+  z-index: 1;
+}
+
+#gitIcon {
+  float: right;
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  top: -3px;
+}
+
+a {
+  float: left;
+  padding: 10px 0 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 90px;
+  font-weight: 450;
+  background-color: transparent;
+}
+
+a:focus {
+  color: #1fdae0;
+}
+
+#homeBtn:visited {
+  color: #1fdae0;
+}
+
+.Title {
+  width: 800px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  top: 250px;
+  left: 90px;
+}
+
+.header1 {
+  animation: introFadeIn ease-in-out 1.3s;
+  -webkit-animation: introFadeIn ease-in-out 1.3s;
+  color: white;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -0.5mm;
+}
+
+.header2 {
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -0.5mm;
+  margin-bottom: 40px;
+}
+
+.header3 {
+  animation: introFadeIn ease-in-out 1.3s;
+  -webkit-animation: introFadeIn ease-in-out 1.3s;
+  color: #ccc;
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: -0.3mm;
+  line-height: 0.8;
+}
+
+#musicicon {
+  color: #1fdae0;
+  margin-left: 5px;
+}
+
+.learnMore {
+  animation: introFadeInBtn ease-in-out 1s;
+  -webkit-animation: introFadeInBtn ease-in-out 1s;
+  color: #1fdae0;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.1mm;
+  line-height: 0.8;
+  position: relative;
+  left: -90px;
+}
+
+#learnmore {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-position: 65% 50%;
+    background-size: cover;
+  }
+  .Title {
+    width: 375px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    position: relative;
+    top: 200px;
+    left: 10px;
+  }
+  .header1 {
+    animation: introFadeIn ease-in-out 1.3s;
+    -webkit-animation: introFadeIn ease-in-out 1.3s;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: -0.1mm;
+  }
+  .header2 {
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+    color: white;
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: -0.5mm;
+    margin-bottom: 20px;
+  }
+  .header3 {
+    animation: introFadeIn ease-in-out 1.3s;
+    -webkit-animation: introFadeIn ease-in-out 1.3s;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: -0.1mm;
+    line-height: 0.8;
+  }
+  #musicicon {
+    color: #1fdae0;
+    margin-left: 5px;
+  }
+  .learnMore {
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+    color: #1fdae0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1mm;
+    line-height: 0.8;
+    position: relative;
+    left: -90px;
+    top: -30px;
+  }
+  #learnmore {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

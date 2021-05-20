@@ -1,0 +1,20 @@
+@-webkit-keyframes introFadeIn {
+  from {transform: translateY(10px); opacity: 0;}
+  to { transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes introFadeIn {
+  from {transform: translateY(10px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+
+@-webkit-keyframes introFadeInBtn {
+  from {transform: translateY(10px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+
+@keyframes introFadeInBtn {
+  from {transform: translateY(10px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+

@@ -61,6 +61,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: auto;
+  overflow-x: hidden;
 }
 
 .navBar {
@@ -83,7 +85,6 @@ body {
 a {
   float: left;
   padding: 10px 0 10px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -112,7 +113,6 @@ a:focus {
 
 .contactHeader {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 64px;
   font-weight: 600;
   letter-spacing: -0.5mm;
@@ -121,7 +121,6 @@ a:focus {
 
 .paragraphContent {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 25px;
   color: #ccc;
   font-size: 18px;
@@ -138,7 +137,6 @@ a:focus {
   position: relative;
   left: 540px;
   bottom: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 300;
@@ -149,7 +147,6 @@ a:focus {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400px;
@@ -178,25 +175,21 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 input:-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 input::-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 input::placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -213,25 +206,21 @@ textarea {
 }
 
 textarea::-webkit-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 textarea:-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 textarea::-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 
 textarea::placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -250,5 +239,177 @@ textarea::placeholder {
   border: 0;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  body {
+    background-position: 65% 50%;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+  }
+  .navBar {
+    display: none;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(26, 26, 26, 0.664);
+    position: relative;
+    width: auto;
+  }
+  .topnav #myLinks {
+    display: block;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 10px;
+  }
+  .active {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #gitIcon {
+    position: relative;
+    left: 35px;
+  }
+  .contactTitle {
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+    width: 390px;
+    height: 800px;
+    position: relative;
+    top: 120px;
+    left: 20px;
+    padding: 5px;
+  }
+  .contactHeader {
+    color: white;
+    font-size: 47px;
+    font-weight: 600;
+    letter-spacing: -0.5mm;
+    margin-bottom: 40px;
+  }
+  .paragraphContent {
+    display: block;
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    position: relative;
+    left: 0px;
+    width: 250px;
+  }
+  .link {
+    position: relative;
+    left: 28px;
+    bottom: 35px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #1fdae0;
+  }
+  .labelName {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  #stupidLabel {
+    position: relative;
+    left: -280px;
+  }
+  input {
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.91);
+    display: block;
+    height: 25px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42;
+    cursor: text;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  input::-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  textarea {
+    min-height: 128px;
+    height: auto;
+    min-width: 360px;
+    border-style: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.91);
+    overflow: auto;
+  }
+  textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  textarea:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  textarea::-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  textarea::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .submitBtn {
+    height: 48px;
+    width: 118px;
+    margin-top: 10px;
+    margin-left: -1px;
+    border-radius: 12px;
+    color: #f0860c;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 9px 15px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

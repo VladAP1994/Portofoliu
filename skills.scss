@@ -36,8 +36,6 @@ a:focus {
   position: relative;
   top: 70px;
   left: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: left;
   font-size: 60px;
   font-weight: 600;
@@ -70,8 +68,6 @@ a:focus {
 }
 .solidworksDescription {
   color: #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
   top: 160px;
   left: -245px;
@@ -87,8 +83,6 @@ a:focus {
   position: relative;
   top: 150px;
   left: -336px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 18px;
   color: #1fdae0;
@@ -111,8 +105,6 @@ a:focus {
 }
 .katalonDescription {
   color: #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
   top: 110px;
   left: -407px;
@@ -122,8 +114,6 @@ a:focus {
   position: relative;
   top: 100px;
   left: -498px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 18px;
   color: #1fdae0;
@@ -132,16 +122,15 @@ a:focus {
   width: 45%;
   position: relative;
   left: 375px;
-  top: -40px
+  top: -40px;
 }
-.skillContainerDjuiced{
+.skillContainerDjuiced {
   @include animationTwo;
   @include container;
   background-image: linear-gradient(180deg, #070707 50%, #052d2e 100%);
 }
 .skillContainerDjuicedContent {
   @include containerContent;
-  // background-color: white;
 }
 .djuicedlink {
   position: relative;
@@ -149,12 +138,10 @@ a:focus {
   top: 20px;
 }
 .djuicedLogo {
-  width: 170px;  
+  width: 170px;
 }
 .djuicedDescription {
   color: #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
   top: 80px;
   left: -202px;
@@ -164,8 +151,6 @@ a:focus {
   position: relative;
   top: 70px;
   left: -293px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 18px;
   color: #1fdae0;
@@ -175,4 +160,229 @@ a:focus {
   position: relative;
   left: 540px;
   top: -80px;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  body {
+    background-position: 65% 50%;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(26, 26, 26, 0.664);
+    position: relative;
+    width: auto;
+  }
+
+  .topnav #myLinks {
+    display: block;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 10px;
+  }
+
+  .active {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  #gitIcon {
+    position: relative;
+    left: 35px;
+  }
+  .container {
+    width: 100%;
+  }
+  .skillsTitle {
+    width: 375px;
+    height: 600px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .skillsHeader {
+    @include animationTwo;
+    width: 375px;
+    position: relative;
+    top: 120px;
+    left: 20px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5mm;
+  }
+  .skillsParagraph {
+    @include animationTwo;
+    display: block;
+    margin-top: 25px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 350px;
+    position: relative;
+    top: 110px;
+    left: 20px;
+  }
+  .skillContainerPoli {
+    @include animationTwo;
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #0f0f0f 50%, #052d2e 100%);
+  }
+  .skillContainerPoliContent {
+    width: auto;
+    height: 500px;
+  }
+  .solidworksLink {
+    position: relative;
+    left: -80px;
+    top: -40px;
+  }
+  .solidworksLogo {
+    width: 200px;
+  }
+  .solidworksDescription {
+    width: 375px;
+    color: #ccc;
+    position: relative;
+    top: 100px;
+    left: -275px;
+    font-weight: 600;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  #solidworksSS {
+    width: 375px;
+    position: relative;
+    left: 0px;
+    top: -30px;
+  }
+  #solidworksLMLink {
+    position: relative;
+    top: -300px;
+    left: -75px;
+    font-weight: 200;
+    font-size: 14px;
+    color: #1fdae0;
+  }
+  .skillContainerKatalon {
+    @include animationTwo;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(360deg, #070707 50%, #052d2e 100%);
+  }
+  .skillContainerKatalonContent {
+    width: 375px;
+    height: 500;
+  }
+  .katalonlink {
+    position: relative;
+    left: -160px;
+    top: -40px;
+  }
+  .katalonLogo {
+    width: 370px;
+  }
+  .katalonDescription {
+    width: 400px;
+    color: #ccc;
+    position: relative;
+    top: 44px;
+    left: -465px;
+    font-weight: 600;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  #katalonLMLink {
+    position: relative;
+    top: -255px;
+    left: -94px;
+    font-weight: 200;
+    font-size: 14px;
+    color: #1fdae0;
+  }
+  #katalonSS {
+    width: 375px;
+    position: relative;
+    left: 0px;
+    top: 20px;
+  }
+  .skillContainerDjuiced {
+    @include animationTwo;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #070707 50%, #052d2e 100%);
+  }
+  .skillContainerDjuicedContent {
+    height: 500px;
+    width: auto;
+  }
+  .djuicedlink {
+    position: relative;
+    left: -70px;
+    top: -40px;
+  }
+  .djuicedLogo {
+    width: 170px;
+  }
+  .djuicedDescription {
+    width: 400px;
+    color: #ccc;
+    position: relative;
+    top: 15px;
+    left: -242px;
+    font-weight: 600;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  #djuicedLMLink {
+    position: relative;
+    top: -230px;
+    left: -70px;
+    font-weight: 200;
+    font-size: 14px;
+    color: #1fdae0;
+  }
+  #djuicedSS {
+    width: 390px;
+    position: relative;
+    left: -10px;
+    top: 50px;
+  }
+  .navBar {
+    display: none;
+  }
 }

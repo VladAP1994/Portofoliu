@@ -61,6 +61,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: auto;
+  overflow-x: hidden;
 }
 
 .navBar {
@@ -83,7 +85,6 @@ body {
 a {
   float: left;
   padding: 10px 0 10px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -120,7 +121,6 @@ a:focus {
 
 .paragraphContent {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 25px;
   color: #ccc;
   font-size: 18px;
@@ -135,7 +135,6 @@ a:focus {
 
 .stupidParagraph {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 25px;
   color: #ccc;
   font-size: 18px;
@@ -158,5 +157,108 @@ a:focus {
   line-height: 25px;
   font-weight: 300;
   color: #1fdae0;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  body {
+    background-position: 65% 50%;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+  }
+  .navBar {
+    display: none;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(26, 26, 26, 0.664);
+    position: relative;
+    width: auto;
+  }
+  .topnav #myLinks {
+    display: block;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 10px;
+  }
+  .active {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #gitIcon {
+    position: relative;
+    left: 35px;
+  }
+  .aboutTitle {
+    width: 390px;
+    height: 850px;
+    padding: 5px;
+    position: relative;
+    top: 120px;
+    left: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .aboutHeader {
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+    color: white;
+    font-size: 47px;
+    font-weight: 600;
+    letter-spacing: -0.5mm;
+    margin-bottom: 40px;
+  }
+  .paragraphContent {
+    display: block;
+    margin-top: 25px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    position: static;
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+  }
+  .stupidParagraph {
+    display: block;
+    margin-top: 25px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: left;
+    position: static;
+    animation: introFadeInBtn ease-in-out 1s;
+    -webkit-animation: introFadeInBtn ease-in-out 1s;
+    position: relative;
+    left: -169px;
+  }
+  #link {
+    position: relative;
+    left: 290px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #1fdae0;
+  }
 }
 /*# sourceMappingURL=about.css.map */

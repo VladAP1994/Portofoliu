@@ -23,6 +23,9 @@ a:focus {
 #homeBtn:visited{
   @include navButtonVisited;
 }
+.topnav{
+  display: none;
+}
 
 .Title {
   width: 800px;
@@ -88,6 +91,7 @@ a:focus {
     background-color: rgba(26, 26, 26, 0.664);
     position: relative;
     width: auto;
+    display: contents;
   }
 
   .topnav #myLinks {

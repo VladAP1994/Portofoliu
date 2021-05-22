@@ -22,7 +22,9 @@ a:focus {
 #contactBtn:visited{
   @include navButtonVisited;
 }
-
+.topnav{
+  display: none;
+}
 .contactTitle{
   @include animationTwo;
   width: 700px;
@@ -130,6 +132,7 @@ textarea::placeholder{
     background-color: rgba(26, 26, 26, 0.664);
     position: relative;
     width: auto;
+    display: contents;
   }
 
   .topnav #myLinks {

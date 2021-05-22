@@ -101,6 +101,10 @@ a:focus {
   color: #1fdae0;
 }
 
+.topnav {
+  display: none;
+}
+
 .contactTitle {
   animation: introFadeInBtn ease-in-out 1s;
   -webkit-animation: introFadeInBtn ease-in-out 1s;
@@ -256,6 +260,7 @@ textarea::placeholder {
     background-color: rgba(26, 26, 26, 0.664);
     position: relative;
     width: auto;
+    display: contents;
   }
   .topnav #myLinks {
     display: block;

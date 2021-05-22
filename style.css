@@ -101,6 +101,10 @@ a:focus {
   color: #1fdae0;
 }
 
+.topnav {
+  display: none;
+}
+
 .Title {
   width: 800px;
   height: 600px;
@@ -174,6 +178,7 @@ a:focus {
     background-color: rgba(26, 26, 26, 0.664);
     position: relative;
     width: auto;
+    display: contents;
   }
   .topnav #myLinks {
     display: block;
